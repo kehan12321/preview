@@ -221,6 +221,36 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
 #stbtn.show{opacity:1;transform:translateY(0);}
 #stbtn:hover{background:#6a9ff8;transform:translateY(-3px);}
 
+/* WHATSAPP BUTTON */
+.wa-btn{position:fixed;bottom:96px;right:36px;width:52px;height:52px;background:#25d366;border-radius:14px;display:flex;align-items:center;justify-content:center;z-index:500;cursor:none;text-decoration:none;box-shadow:0 4px 24px rgba(37,211,102,.4);animation:waPop .4s cubic-bezier(.175,.885,.32,1.275) 1s both;transition:all .3s;}
+.wa-btn:hover{transform:translateY(-4px) scale(1.08);box-shadow:0 8px 40px rgba(37,211,102,.6);}
+.wa-btn svg{width:26px;height:26px;fill:white;}
+.wa-tooltip{position:absolute;right:64px;background:rgba(17,22,32,.95);border:1px solid var(--border);color:var(--white);font-size:12px;font-weight:600;white-space:nowrap;padding:7px 14px;border-radius:8px;opacity:0;transform:translateX(8px);transition:all .3s;pointer-events:none;}
+.wa-btn:hover .wa-tooltip{opacity:1;transform:translateX(0);}
+@keyframes waPop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+
+/* MAINTENANCE SECTION */
+.maintenance{background:var(--bg2);}
+.maint-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:64px;}
+.maint-card{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:36px;transition:all .4s;cursor:none;position:relative;overflow:hidden;}
+.maint-card.pop{border-color:var(--blue);background:linear-gradient(160deg,rgba(79,142,247,.07),var(--panel));}
+.maint-card.pop::after{content:'Best Value';position:absolute;top:20px;right:20px;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);background:rgba(79,142,247,.15);border:1px solid rgba(79,142,247,.25);padding:5px 12px;border-radius:6px;}
+.maint-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.4);}
+.maint-card.pop:hover{box-shadow:0 20px 50px rgba(79,142,247,.12);}
+.mc-period{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.mc-name{font-family:'Clash Display',sans-serif;font-size:24px;font-weight:700;margin-bottom:10px;}
+.mc-price{font-family:'Clash Display',sans-serif;font-size:38px;font-weight:700;color:var(--blue);line-height:1;margin-bottom:6px;}
+.mc-price span{font-size:14px;color:var(--muted);font-family:'Cabinet Grotesk',sans-serif;font-weight:400;}
+.mc-note{font-size:12px;color:var(--muted);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+.mc-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.mc-feat{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(240,244,255,.75);}
+.mc-feat::before{content:'✓';color:var(--blue);font-weight:700;font-size:13px;flex-shrink:0;margin-top:1px;}
+.mc-btn{width:100%;padding:14px;border-radius:10px;font-family:'Cabinet Grotesk',sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;cursor:none;transition:all .3s;border:1px solid var(--border);background:transparent;color:var(--white);}
+.maint-card.pop .mc-btn{background:var(--blue);border-color:var(--blue);box-shadow:0 0 24px rgba(79,142,247,.3);}
+.mc-btn:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-2px);}
+.maint-note{margin-top:24px;padding:20px;border-radius:12px;background:rgba(79,142,247,.05);border:1px solid rgba(79,142,247,.12);font-size:13px;color:var(--muted);text-align:center;line-height:1.7;}
+.maint-note strong{color:var(--blue);}
+
 .rv{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease;}
 .rv.in{opacity:1;transform:translateY(0);}
 .rv-l{opacity:0;transform:translateX(-32px);transition:opacity .8s ease,transform .8s ease;}
@@ -250,6 +280,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
 <div id="cur2"></div>
 <button id="stbtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
+<!-- WHATSAPP FLOATING BUTTON -->
+<a class="wa-btn" href="https://wa.me/923192652346?text=Hi%20Shan!%20I%20saw%20your%20portfolio%20on%20veltro.me%20and%20I'm%20interested%20in%20a%20website." target="_blank" rel="noopener">
+  <div class="wa-tooltip">Chat on WhatsApp</div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="nav-logo">Vel<span>tro</span></a>
@@ -258,6 +294,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Work</a></li>
     <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#maintenance">Maintenance</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
@@ -521,6 +558,49 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   </div>
 </section>
 
+<!-- MAINTENANCE -->
+<section class="maintenance sec" id="maintenance">
+  <div style="text-align:center;max-width:580px;margin:0 auto;" class="rv">
+    <div class="sec-tag">Maintenance</div>
+    <h2 class="sec-title">Keep It Running<br><span style="color:var(--blue)">Perfectly.</span></h2>
+    <p class="sec-sub" style="margin:0 auto">After launch, I offer ongoing maintenance plans to keep your site fast, updated, and working flawlessly.</p>
+  </div>
+  <div class="maint-grid">
+    <div class="maint-card rv d1">
+      <div class="mc-period">Monthly</div>
+      <div class="mc-name">Monthly Care</div>
+      <div class="mc-price">PKR 3k<span> – 5k / mo</span></div>
+      <div class="mc-note">Flexible — cancel anytime</div>
+      <div class="mc-feats">
+        <div class="mc-feat">Content updates (text, images)</div>
+        <div class="mc-feat">Bug fixes & tweaks</div>
+        <div class="mc-feat">Performance checks</div>
+        <div class="mc-feat">WhatsApp support</div>
+        <div class="mc-feat">Up to 3 change requests/month</div>
+      </div>
+      <button class="mc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+    </div>
+    <div class="maint-card pop rv d2">
+      <div class="mc-period">Yearly</div>
+      <div class="mc-name">Annual Care</div>
+      <div class="mc-price">PKR 25k<span> – 40k / yr</span></div>
+      <div class="mc-note">Save up to 40% vs monthly billing</div>
+      <div class="mc-feats">
+        <div class="mc-feat">Everything in Monthly</div>
+        <div class="mc-feat">Priority response time</div>
+        <div class="mc-feat">Unlimited small updates</div>
+        <div class="mc-feat">1 free section redesign/year</div>
+        <div class="mc-feat">Annual performance report</div>
+        <div class="mc-feat">Domain renewal reminders</div>
+      </div>
+      <button class="mc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+    </div>
+  </div>
+  <div class="maint-note rv d3">
+    <strong>Not sure which plan you need?</strong> Message me on WhatsApp or fill the form below — I'll recommend the right plan for your business size and budget.
+  </div>
+</section>
+
 <!-- EXPERIENCE -->
 <section class="experience sec" id="experience">
   <div class="rv">
@@ -574,7 +654,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
       <p>Got a business in Karachi that needs a website? Reach out — I'll get back to you the same day and we can get started right away.</p>
       <div class="cd">
         <div class="cd-icon">📧</div>
-        <div><div class="cd-label">Email</div><div class="cd-val">shanmerchant6@gmail.com</div></div>
+        <div><div class="cd-label">Email</div><div class="cd-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d1e050c0300081f0e050c03195b2d0a000c0401430e0200">[email&#160;protected]</a></div></div>
       </div>
       <div class="cd">
         <div class="cd-icon">💬</div>
@@ -591,23 +671,27 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
     </div>
     <div class="contact-form rv-r d2">
       <div class="cf-title">Send a Message</div>
-      <div class="ff-row">
-        <div class="ff"><label>Your Name</label><input type="text" placeholder="Ahmad Khan"></div>
-        <div class="ff"><label>Phone</label><input type="tel" placeholder="+92 300 0000000"></div>
-      </div>
-      <div class="ff"><label>Email</label><input type="email" placeholder="you@business.com"></div>
-      <div class="ff">
-        <label>What do you need?</label>
-        <select>
-          <option value="">Select a package...</option>
-          <option>Basic Site — PKR 15k to 20k</option>
-          <option>Business Site — PKR 25k to 35k</option>
-          <option>Elite Site — PKR 35k to 45k</option>
-          <option>Not sure — let's talk</option>
-        </select>
-      </div>
-      <div class="ff"><label>Tell me about your business</label><textarea placeholder="What does your business do? What should your website achieve?"></textarea></div>
-      <button class="cf-submit" onclick="handleMsg(event)"><span id="msgTxt">Send Message ✨</span></button>
+      <form action="https://formspree.io/f/xyknoovw" method="POST" id="contactForm">
+        <div class="ff-row">
+          <div class="ff"><label>Your Name</label><input type="text" name="name" placeholder="Ahmad Khan" required></div>
+          <div class="ff"><label>Phone</label><input type="tel" name="phone" placeholder="+92 300 0000000"></div>
+        </div>
+        <div class="ff"><label>Email</label><input type="email" name="email" placeholder="you@business.com" required></div>
+        <div class="ff">
+          <label>What do you need?</label>
+          <select name="package">
+            <option value="">Select a package...</option>
+            <option>Basic Site — PKR 15k to 20k</option>
+            <option>Business Site — PKR 25k to 35k</option>
+            <option>Elite Site — PKR 35k to 45k</option>
+            <option>Monthly Maintenance — PKR 3k to 5k/mo</option>
+            <option>Annual Maintenance — PKR 25k to 40k/yr</option>
+            <option>Not sure — let's talk</option>
+          </select>
+        </div>
+        <div class="ff"><label>Tell me about your business</label><textarea name="message" placeholder="What does your business do? What should your website achieve?" required></textarea></div>
+        <button type="submit" class="cf-submit"><span id="msgTxt">Send Message ✨</span></button>
+      </form>
     </div>
   </div>
 </section>
@@ -625,7 +709,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   <div class="ft-copy">© 2026 Veltro · Built by Shan e Ali · Karachi, Pakistan</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* CURSOR */
 let mx=0,my=0,rx=0,ry=0;
 const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
@@ -660,13 +744,32 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:.08});
 document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
 
-/* FORM */
-function handleMsg(e){
-  const btn=e.target.closest('button'),t=document.getElementById('msgTxt');
-  t.textContent='✅ Sent! I\'ll reply soon.';
-  btn.style.background='#16a34a';
-  setTimeout(()=>{t.textContent='Send Message ✨';btn.style.background='';},5000);
-}
+/* FORM — Formspree */
+const form=document.getElementById('contactForm');
+const msgTxt=document.getElementById('msgTxt');
+form.addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=form.querySelector('button[type="submit"]');
+  msgTxt.textContent='Sending...';
+  btn.disabled=true;
+  try{
+    const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+    if(res.ok){
+      msgTxt.textContent='✅ Sent! I\'ll reply soon.';
+      btn.style.background='#16a34a';
+      form.reset();
+      setTimeout(()=>{msgTxt.textContent='Send Message ✨';btn.style.background='';btn.disabled=false;},5000);
+    }else{
+      msgTxt.textContent='❌ Error — try WhatsApp instead';
+      btn.style.background='#dc2626';
+      setTimeout(()=>{msgTxt.textContent='Send Message ✨';btn.style.background='';btn.disabled=false;},4000);
+    }
+  }catch{
+    msgTxt.textContent='❌ Error — try WhatsApp instead';
+    btn.style.background='#dc2626';
+    setTimeout(()=>{msgTxt.textContent='Send Message ✨';btn.style.background='';btn.disabled=false;},4000);
+  }
+});
 </script>
 </body>
 </html>
