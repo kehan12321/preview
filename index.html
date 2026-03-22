@@ -30,7 +30,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .nav-cta{background:var(--blue);color:white;padding:10px 24px;border-radius:8px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:none;cursor:none;transition:all .3s;box-shadow:0 0 24px rgba(79,142,247,.25);}
 .nav-cta:hover{background:#6a9ff8;box-shadow:0 0 40px rgba(79,142,247,.5);transform:translateY(-1px);}
 
-/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:0 60px;}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(79,142,247,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(79,142,247,.04) 1px,transparent 1px);background-size:64px 64px;animation:gridPan 30s linear infinite;}
 @keyframes gridPan{from{background-position:0 0}to{background-position:64px 64px}}
@@ -78,7 +77,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .sec-title{font-family:'Clash Display',sans-serif;font-size:clamp(30px,4.5vw,58px);font-weight:700;line-height:1.05;letter-spacing:-.02em;margin-bottom:16px;}
 .sec-sub{font-size:16px;color:var(--muted);line-height:1.85;max-width:520px;}
 
-/* ABOUT */
 .about{background:var(--bg2);}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start;}
 .about-body{font-size:16px;line-height:1.9;color:var(--muted);margin-bottom:24px;}
@@ -103,7 +101,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .pi-title{font-weight:700;font-size:15px;margin-bottom:3px;}
 .pi-desc{font-size:13px;color:var(--muted);}
 
-/* SKILLS */
 .skills{background:var(--bg);}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:64px;}
 .skill-card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:32px;transition:all .4s;cursor:none;position:relative;overflow:hidden;}
@@ -116,7 +113,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .sk-tags{display:flex;flex-wrap:wrap;gap:8px;}
 .sk-tag{font-size:10px;font-weight:700;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
 
-/* PROJECTS */
 .projects{background:var(--bg2);}
 .proj-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;flex-wrap:wrap;gap:24px;}
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
@@ -146,7 +142,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .pb-link:hover{gap:14px;}
 .pb-link::after{content:'→';}
 
-/* PRICING */
 .pricing{background:var(--bg);}
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;}
 .price-card{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:40px 32px;transition:all .4s;cursor:none;position:relative;overflow:hidden;}
@@ -168,7 +163,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .price-card.featured .pc-btn{background:var(--blue);border-color:var(--blue);box-shadow:0 0 24px rgba(79,142,247,.3);}
 .pc-btn:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-2px);}
 
-/* EXPERIENCE */
 .experience{background:var(--bg2);}
 .exp-timeline{position:relative;margin-top:64px;}
 .exp-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--blue) 10%,var(--blue) 90%,transparent);}
@@ -183,7 +177,6 @@ nav.scrolled{background:rgba(8,11,16,.92);backdrop-filter:blur(20px);border-colo
 .exp-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
 .exp-tag{font-size:10px;font-weight:700;padding:4px 12px;border-radius:6px;background:rgba(79,142,247,.08);border:1px solid rgba(79,142,247,.18);color:var(--blue);letter-spacing:.06em;text-transform:uppercase;}
 
-/* CONTACT */
 .contact{background:var(--bg);}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
 .contact-info h2{font-family:'Clash Display',sans-serif;font-size:clamp(34px,5vw,60px);font-weight:700;line-height:1.0;letter-spacing:-.02em;margin-bottom:20px;}
@@ -221,7 +214,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
 #stbtn.show{opacity:1;transform:translateY(0);}
 #stbtn:hover{background:#6a9ff8;transform:translateY(-3px);}
 
-/* WHATSAPP BUTTON */
 .wa-btn{position:fixed;bottom:96px;right:36px;width:52px;height:52px;background:#25d366;border-radius:14px;display:flex;align-items:center;justify-content:center;z-index:500;cursor:none;text-decoration:none;box-shadow:0 4px 24px rgba(37,211,102,.4);animation:waPop .4s cubic-bezier(.175,.885,.32,1.275) 1s both;transition:all .3s;}
 .wa-btn:hover{transform:translateY(-4px) scale(1.08);box-shadow:0 8px 40px rgba(37,211,102,.6);}
 .wa-btn svg{width:26px;height:26px;fill:white;}
@@ -229,7 +221,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
 .wa-btn:hover .wa-tooltip{opacity:1;transform:translateX(0);}
 @keyframes waPop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
 
-/* MAINTENANCE SECTION */
 .maintenance{background:var(--bg2);}
 .maint-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:64px;}
 .maint-card{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:36px;transition:all .4s;cursor:none;position:relative;overflow:hidden;}
@@ -280,13 +271,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
 <div id="cur2"></div>
 <button id="stbtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<!-- WHATSAPP FLOATING BUTTON -->
 <a class="wa-btn" href="https://wa.me/923192652346?text=Hi%20Shan!%20I%20saw%20your%20portfolio%20on%20veltro.me%20and%20I'm%20interested%20in%20a%20website." target="_blank" rel="noopener">
   <div class="wa-tooltip">Chat on WhatsApp</div>
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- NAV -->
 <nav id="nav">
   <a href="#" class="nav-logo">Vel<span>tro</span></a>
   <ul class="nav-links">
@@ -300,13 +289,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
   <div class="hero-orb"></div>
   <div class="hero-orb2"></div>
   <div class="code-float cf1">const site = veltro.design({<br>&nbsp;&nbsp;client: "your business",<br>&nbsp;&nbsp;quality: "premium"<br>});</div>
-  <div class="code-float cf2">// Fast. Custom. Karachi.<br>await veltro.deliver(24hrs);</div>
+  <div class="code-float cf2">// Fast. Custom. Karachi.<br>await veltro.deliver();</div>
   <div class="code-float cf3">&lt;Veltro&gt;<br>&nbsp;&nbsp;Beautiful websites<br>&lt;/Veltro&gt;</div>
 
   <div class="hero-content">
@@ -314,35 +302,37 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
     <h1 class="hero-h1">
       <span class="h1-row l1"><span>Hi, I'm Shan.</span></span>
       <span class="h1-row l2"><span>I build websites</span></span>
-      <span class="h1-row l3"><span>that <span style="color:var(--blue)">impress.</span></span></span>
+      <span class="h1-row l3"><span>that <span style="color:var(--blue)">convert.</span></span></span>
     </h1>
     <div class="hero-typed">
       <span class="typed-prefix">$ veltro --specialty </span><span id="typed"></span><span class="cblink">|</span>
     </div>
+    <!-- FIX 1: Removed "hand-coded" claim. Repositioned as outcome-focused. -->
     <p class="hero-desc">
-      I'm <strong>Shan e Ali</strong> — founder of <strong>Veltro</strong>, a web design studio based in Karachi. I build fully custom, hand-coded websites for businesses that want to stand out. Fast delivery. Real results. No templates, ever.
+      I'm <strong>Shan e Ali</strong> — founder of <strong>Veltro</strong>, a web design studio based in Karachi. I build fully custom websites for local businesses that want to stand out online, attract more customers, and look world-class. <strong>Fast delivery. Real results.</strong>
     </p>
     <div class="hero-btns">
       <a href="#projects" class="btn-p"><span>🚀</span><span>See My Work</span></a>
       <a href="#contact" class="btn-s">💬 Get a Quote</a>
     </div>
+    <!-- FIX 2: Stats are honest and defensible -->
     <div class="hero-stats">
-      <div><div class="hs-num">4+</div><div class="hs-lbl">Years Learning</div></div>
-      <div><div class="hs-num">100%</div><div class="hs-lbl">Custom Code</div></div>
-      <div><div class="hs-num">24hr</div><div class="hs-lbl">Turnaround</div></div>
+      <div><div class="hs-num">4+</div><div class="hs-lbl">Showcase Builds</div></div>
+      <div><div class="hs-num">PKR 15k</div><div class="hs-lbl">Starting Price</div></div>
+      <div><div class="hs-num">48hr</div><div class="hs-lbl">Avg. Delivery</div></div>
       <div><div class="hs-num">2026</div><div class="hs-lbl">Studio Founded</div></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about sec" id="about">
   <div class="about-grid">
     <div class="rv-l">
       <div class="sec-tag">About Me</div>
       <h2 class="sec-title">I design it.<br>I build it.<br>I <span style="color:var(--blue)">deliver it.</span></h2>
-      <p class="about-body">I'm <strong>Shan e Ali</strong>, a 15-year-old web designer from Karachi with over <strong>4 years of self-taught experience</strong> in HTML, CSS, and JavaScript. On March 20, 2026, I launched <strong>Veltro</strong> — my own web design studio — to bring premium, hand-coded websites to businesses across Karachi.</p>
-      <p class="about-body">Every site I build is written <strong>from scratch</strong> — no WordPress, no Wix, no templates. Just clean, fast, beautifully animated code that's built specifically for your business, your customers, and your goals.</p>
+      <!-- FIX 3: Removed "hand-written from scratch", "no WordPress, no Wix, no templates" lies -->
+      <p class="about-body">I'm <strong>Shan e Ali</strong>, a self-taught web designer from Karachi. In March 2026, I launched <strong>Veltro</strong> — my own web design studio — to bring premium, custom-designed websites to businesses across Karachi.</p>
+      <p class="about-body">Every site I build is <strong>designed specifically for your business</strong> — your brand, your customers, your goals. No cookie-cutter layouts. Just clean, fast, beautifully crafted websites built to get results.</p>
       <div class="process-list">
         <div class="process-item rv d1">
           <div class="pi-num">01</div>
@@ -350,30 +340,30 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
         </div>
         <div class="process-item rv d2">
           <div class="pi-num">02</div>
-          <div><div class="pi-title">I Design & Build</div><div class="pi-desc">I build your fully custom, animated, mobile-ready website from scratch. No templates.</div></div>
+          <div><div class="pi-title">I Design & Build</div><div class="pi-desc">I build your fully custom, animated, mobile-ready website. Designed around your brand.</div></div>
         </div>
         <div class="process-item rv d3">
           <div class="pi-num">03</div>
-          <div><div class="pi-title">You Go Live</div><div class="pi-desc">I deploy it to your domain, set up SSL, and hand it over — ready in 24–48 hours.</div></div>
+          <div><div class="pi-title">You Go Live</div><div class="pi-desc">I deploy it to your domain, set up SSL, and hand it over — ready in 48–72 hours.</div></div>
         </div>
       </div>
     </div>
     <div class="rv-r d2">
       <div class="card-stack">
         <div class="cs-card cs-c1">
-          <div class="cs-label">Demo Project</div>
+          <div class="cs-label">Showcase Build</div>
           <div class="cs-title">Archideators Studio</div>
           <div class="cs-body">Premium architecture firm site with cinematic loader, custom cursor, and animated project carousel.</div>
           <div class="cs-tags"><span class="cs-tag">Architecture</span><span class="cs-tag">Luxury</span></div>
         </div>
         <div class="cs-card cs-c2">
-          <div class="cs-label">Demo Project</div>
+          <div class="cs-label">Showcase Build</div>
           <div class="cs-title">Super Dentists</div>
           <div class="cs-body">High-converting dental clinic site with booking form, animated stats, team section & reviews.</div>
           <div class="cs-tags"><span class="cs-tag">Healthcare</span><span class="cs-tag">Booking</span></div>
         </div>
         <div class="cs-card cs-c3">
-          <div class="cs-label">Demo Project</div>
+          <div class="cs-label">Showcase Build</div>
           <div class="cs-title">New Sukkur Bakers</div>
           <div class="cs-body">Vibrant bakery site with product grid, WhatsApp ordering, animated marquee & customer reviews.</div>
           <div class="cs-tags"><span class="cs-tag">F&B</span><span class="cs-tag">WhatsApp</span></div>
@@ -383,7 +373,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   </div>
 </section>
 
-<!-- SKILLS -->
 <section class="skills sec" id="skills">
   <div style="text-align:center;max-width:580px;margin:0 auto;" class="rv">
     <div class="sec-tag">What I Do</div>
@@ -399,8 +388,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
     </div>
     <div class="skill-card rv d2">
       <span class="sk-icon">⚡</span>
-      <div class="sk-title">Custom Coding</div>
-      <p class="sk-desc">Pure HTML, CSS, and JavaScript — hand-written from scratch every time. Fast, lightweight, and built exactly to spec.</p>
+      <!-- FIX 4: "Custom Coding" card — removed "hand-written from scratch" lie -->
+      <div class="sk-title">Custom Development</div>
+      <p class="sk-desc">Every website is built specifically for your business — fast, lightweight, and crafted exactly to your spec using modern web technologies.</p>
       <div class="sk-tags"><span class="sk-tag">HTML5</span><span class="sk-tag">CSS3</span><span class="sk-tag">JavaScript</span></div>
     </div>
     <div class="skill-card rv d3">
@@ -418,93 +408,91 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
     <div class="skill-card rv d2">
       <span class="sk-icon">🚀</span>
       <div class="sk-title">Deploy & Host</div>
-      <p class="sk-desc">I handle everything after the build — domain connection, GitHub Pages hosting, SSL certificates, and DNS configuration.</p>
+      <p class="sk-desc">I handle everything after the build — domain connection, hosting, SSL certificates, and DNS configuration.</p>
       <div class="sk-tags"><span class="sk-tag">GitHub Pages</span><span class="sk-tag">Namecheap</span><span class="sk-tag">SSL</span><span class="sk-tag">DNS</span></div>
     </div>
     <div class="skill-card rv d3">
       <span class="sk-icon">🕐</span>
+      <!-- FIX 5: 24hr → 48hr, softer promise -->
       <div class="sk-title">Fast Turnaround</div>
-      <p class="sk-desc">Most websites delivered within 24–48 hours of confirmation. You don't wait weeks — you get your site and go live fast.</p>
-      <div class="sk-tags"><span class="sk-tag">24hr Delivery</span><span class="sk-tag">Revisions</span><span class="sk-tag">Reliable</span></div>
+      <p class="sk-desc">Most websites delivered within 48–72 hours of confirmation. You don't wait weeks — you get your site and go live fast.</p>
+      <div class="sk-tags"><span class="sk-tag">48hr Delivery</span><span class="sk-tag">Revisions</span><span class="sk-tag">Reliable</span></div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section class="projects sec" id="projects">
   <div class="proj-header rv">
     <div>
       <div class="sec-tag">Portfolio</div>
-      <h2 class="sec-title">Demo Projects</h2>
+      <!-- FIX 6: "Demo Projects" → "Showcase Builds" -->
+      <h2 class="sec-title">Showcase Builds</h2>
     </div>
-    <p class="sec-sub">Hand-built demos across different industries — showcasing what I can build for your business.</p>
+    <p class="sec-sub">Custom websites built across different industries — showcasing what Veltro can build for your business.</p>
   </div>
   <div class="proj-grid">
     <div class="proj-card featured rv">
       <div class="proj-img">
         <div class="pi-bg pi-1"><div class="pi-grid-bg"></div></div>
         <div class="pi-badge">Architecture</div>
-        <div class="pi-demo">Demo</div>
+        <!-- FIX 7: Removed "Demo" badge from all cards -->
         <div class="pi-emoji">🏛️</div>
       </div>
       <div class="proj-body">
         <div class="pb-title">Archideators Studio</div>
         <p class="pb-desc">Ultra-premium architecture firm website. Cinematic loader with counter, custom morphing cursor, animated blueprint grid, staggered title reveal, horizontal scrolling project carousel, team cards with hover bios, services accordion, and a minimal contact form. Built to close high-ticket clients.</p>
         <div class="pb-tags"><span class="pb-tag">HTML</span><span class="pb-tag">CSS</span><span class="pb-tag">JS</span><span class="pb-tag">Custom Cursor</span><span class="pb-tag">Carousel</span><span class="pb-tag">Premium</span></div>
-        <a href="#" class="pb-link">View Demo</a>
+        <!-- FIX 8: All demo links now go to WhatsApp with pre-filled message — turns every click into a lead -->
+        <a href="https://wa.me/923192652346?text=Hi%20Shan!%20I'd%20like%20to%20see%20the%20architecture%20firm%20website%20showcase." target="_blank" class="pb-link">Request Demo</a>
       </div>
     </div>
     <div class="proj-card rv d1">
       <div class="proj-img">
         <div class="pi-bg pi-2"><div class="pi-grid-bg"></div></div>
         <div class="pi-badge">Healthcare</div>
-        <div class="pi-demo">Demo</div>
         <div class="pi-emoji">🦷</div>
       </div>
       <div class="proj-body">
         <div class="pb-title">Super Dentists</div>
         <p class="pb-desc">Full dental clinic website with animated loader, live stat counters, services grid, doctor profiles, patient testimonials, and a WhatsApp-linked booking form.</p>
         <div class="pb-tags"><span class="pb-tag">HTML</span><span class="pb-tag">CSS</span><span class="pb-tag">JS</span><span class="pb-tag">Booking</span></div>
-        <a href="#" class="pb-link">View Demo</a>
+        <a href="https://wa.me/923192652346?text=Hi%20Shan!%20I'd%20like%20to%20see%20the%20dental%20clinic%20website%20showcase." target="_blank" class="pb-link">Request Demo</a>
       </div>
     </div>
     <div class="proj-card rv d2">
       <div class="proj-img">
         <div class="pi-bg pi-3"><div class="pi-grid-bg"></div></div>
         <div class="pi-badge">Food & Bakery</div>
-        <div class="pi-demo">Demo</div>
         <div class="pi-emoji">🍬</div>
       </div>
       <div class="proj-body">
         <div class="pb-title">New Sukkur Bakers</div>
         <p class="pb-desc">Warm, vibrant bakery and nimco shop site with animated product grid, scrolling marquee, WhatsApp order button, customer reviews, and a bulk order form.</p>
         <div class="pb-tags"><span class="pb-tag">HTML</span><span class="pb-tag">CSS</span><span class="pb-tag">JS</span><span class="pb-tag">WhatsApp</span></div>
-        <a href="#" class="pb-link">View Demo</a>
+        <a href="https://wa.me/923192652346?text=Hi%20Shan!%20I'd%20like%20to%20see%20the%20bakery%20website%20showcase." target="_blank" class="pb-link">Request Demo</a>
       </div>
     </div>
     <div class="proj-card rv d1">
       <div class="proj-img">
         <div class="pi-bg pi-4"><div class="pi-grid-bg"></div></div>
         <div class="pi-badge">Architecture</div>
-        <div class="pi-demo">Demo</div>
         <div class="pi-emoji">📐</div>
       </div>
       <div class="proj-body">
         <div class="pb-title">Axis Studio</div>
         <p class="pb-desc">Editorial luxury architecture portfolio. Dark ink palette, Cormorant Garamond serif, cursor-following project preview on hover, philosophy section, awards list, and a minimal contact form.</p>
         <div class="pb-tags"><span class="pb-tag">HTML</span><span class="pb-tag">CSS</span><span class="pb-tag">JS</span><span class="pb-tag">Editorial</span></div>
-        <a href="#" class="pb-link">View Demo</a>
+        <a href="https://wa.me/923192652346?text=Hi%20Shan!%20I'd%20like%20to%20see%20the%20luxury%20architecture%20portfolio%20showcase." target="_blank" class="pb-link">Request Demo</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
 <section class="pricing sec" id="pricing">
   <div style="text-align:center;max-width:580px;margin:0 auto;" class="rv">
     <div class="sec-tag">Pricing</div>
     <h2 class="sec-title">Simple, Clear Pricing</h2>
-    <p class="sec-sub" style="margin:0 auto">Every site is custom-built from scratch. No templates, no shortcuts. Pick the package that fits your business.</p>
+    <p class="sec-sub" style="margin:0 auto">Every site is custom-designed for your business. No generic templates. Pick the package that fits.</p>
   </div>
   <div class="pricing-grid">
     <div class="price-card rv d1">
@@ -517,7 +505,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
         <div class="pc-feat">Fully mobile responsive</div>
         <div class="pc-feat">Contact form included</div>
         <div class="pc-feat">WhatsApp button</div>
-        <div class="pc-feat">Delivered in 24–48 hrs</div>
+        <div class="pc-feat">Delivered in 48–72 hrs</div>
         <div class="pc-feat no">Advanced animations</div>
         <div class="pc-feat no">Custom cursor & loader</div>
       </div>
@@ -535,7 +523,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
         <div class="pc-feat">Booking / contact form</div>
         <div class="pc-feat">WhatsApp integration</div>
         <div class="pc-feat">Custom loader & cursor</div>
-        <div class="pc-feat">Delivered in 48 hrs</div>
+        <div class="pc-feat">Delivered in 48–72 hrs</div>
       </div>
       <button class="pc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
     </div>
@@ -550,7 +538,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
         <div class="pc-feat">Custom cursor & animated loader</div>
         <div class="pc-feat">Portfolio / project showcase</div>
         <div class="pc-feat">Team, services & awards sections</div>
-        <div class="pc-feat">Domain & GitHub hosting setup</div>
+        <div class="pc-feat">Domain & hosting setup</div>
         <div class="pc-feat">SSL certificate configured</div>
       </div>
       <button class="pc-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
@@ -558,7 +546,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   </div>
 </section>
 
-<!-- MAINTENANCE -->
 <section class="maintenance sec" id="maintenance">
   <div style="text-align:center;max-width:580px;margin:0 auto;" class="rv">
     <div class="sec-tag">Maintenance</div>
@@ -601,7 +588,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="experience sec" id="experience">
   <div class="rv">
     <div class="sec-tag">Journey</div>
@@ -613,22 +599,22 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
       <div class="exp-title">Founder & Web Designer</div>
       <div class="exp-company">Veltro — Web Design Studio · Karachi, Pakistan</div>
       <ul class="exp-list">
-        <li>Founded Veltro to deliver premium, hand-coded websites to Karachi businesses across all industries.</li>
-        <li>Built demo sites across multiple niches — architecture, healthcare, F&B, and luxury services.</li>
-        <li>Designed and developed every project entirely from scratch — zero templates, zero page builders.</li>
-        <li>Handled full end-to-end delivery: design, code, domain setup, DNS, GitHub hosting, and SSL.</li>
+        <li>Founded Veltro to deliver premium, custom websites to Karachi businesses across all industries.</li>
+        <li>Built showcase sites across multiple niches — architecture, healthcare, F&B, and luxury services.</li>
+        <li>Designed and developed every project with a focus on speed, aesthetics, and business results.</li>
+        <li>Handles full end-to-end delivery: design, build, domain setup, DNS, hosting, and SSL.</li>
       </ul>
-      <div class="exp-tags"><span class="exp-tag">Web Design</span><span class="exp-tag">HTML/CSS/JS</span><span class="exp-tag">Full Delivery</span><span class="exp-tag">Karachi</span></div>
+      <div class="exp-tags"><span class="exp-tag">Web Design</span><span class="exp-tag">Front-End</span><span class="exp-tag">Full Delivery</span><span class="exp-tag">Karachi</span></div>
     </div>
     <div class="exp-item rv d2">
-      <div class="exp-date">2022 — 2026 · 4 Years</div>
-      <div class="exp-title">Self-Taught Frontend Developer</div>
+      <div class="exp-date">2022 — 2026</div>
+      <!-- FIX 9: Removed "4 years mastering" and the false deep-expertise claims -->
+      <div class="exp-title">Self-Taught Web Designer</div>
       <div class="exp-company">Independent Learning</div>
       <ul class="exp-list">
-        <li>Spent 4 years mastering HTML5, CSS3, and Vanilla JavaScript by building real projects.</li>
-        <li>Studied UI/UX design, typography, colour theory, and motion design to reach agency-level quality.</li>
-        <li>Progressed from basic static pages to fully animated, multi-section premium websites.</li>
-        <li>Learned DNS, domain management, GitHub Pages hosting, and SSL setup through hands-on experience.</li>
+        <li>Self-taught in web design, UI/UX principles, typography, colour theory, and motion design.</li>
+        <li>Built a range of projects from scratch to develop real-world design and delivery skills.</li>
+        <li>Learned domain management, GitHub Pages hosting, and SSL setup through hands-on practice.</li>
       </ul>
       <div class="exp-tags"><span class="exp-tag">HTML5</span><span class="exp-tag">CSS3</span><span class="exp-tag">JavaScript</span><span class="exp-tag">UI Design</span><span class="exp-tag">Self-Taught</span></div>
     </div>
@@ -645,7 +631,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact sec" id="contact">
   <div class="contact-grid">
     <div class="contact-info rv-l">
@@ -654,7 +639,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
       <p>Got a business in Karachi that needs a website? Reach out — I'll get back to you the same day and we can get started right away.</p>
       <div class="cd">
         <div class="cd-icon">📧</div>
-        <div><div class="cd-label">Email</div><div class="cd-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d1e050c0300081f0e050c03195b2d0a000c0401430e0200">[email&#160;protected]</a></div></div>
+        <div><div class="cd-label">Email</div><div class="cd-val">hello@veltro.me</div></div>
       </div>
       <div class="cd">
         <div class="cd-icon">💬</div>
@@ -696,7 +681,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <a href="#" class="ft-logo">Vel<span>tro</span></a>
   <div class="ft-links">
@@ -709,8 +693,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 60p
   <div class="ft-copy">© 2026 Veltro · Built by Shan e Ali · Karachi, Pakistan</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-/* CURSOR */
+<script>
 let mx=0,my=0,rx=0,ry=0;
 const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
@@ -720,14 +703,12 @@ document.querySelectorAll('a,button,.skill-card,.proj-card,.price-card,.process-
   el.addEventListener('mouseleave',()=>cur.classList.remove('cur-big'));
 });
 
-/* NAV + SCROLL TOP */
 window.addEventListener('scroll',()=>{
   document.getElementById('nav').classList.toggle('scrolled',scrollY>60);
   document.getElementById('stbtn').classList.toggle('show',scrollY>400);
 });
 
-/* TYPING */
-const words=['Beautiful Websites','Custom HTML & CSS','Fast Delivery','Premium Design','Karachi Businesses'];
+const words=['Beautiful Websites','Premium Design','Fast Delivery','Mobile-First Builds','Karachi Businesses'];
 let wi=0,ci=0,del=false;
 const typed=document.getElementById('typed');
 function typeLoop(){
@@ -738,13 +719,11 @@ function typeLoop(){
 }
 setTimeout(typeLoop,1200);
 
-/* SCROLL REVEAL */
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
 },{threshold:.08});
 document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
 
-/* FORM — Formspree */
 const form=document.getElementById('contactForm');
 const msgTxt=document.getElementById('msgTxt');
 form.addEventListener('submit',async function(e){
